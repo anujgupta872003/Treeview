@@ -1,0 +1,78 @@
+@CHARSET "ISO-8859-1";
+
+
+ul {
+    list-style: none;
+    
+}
+div.treeview ul li{
+	
+	display : block;
+	font-size : auto;
+}
+
+/* div.treeview li::before { */
+/* 	content:"\2212"; */
+/* 	position:relative; */
+/* 	top:1px; */
+/* 	display:inline-block; */
+/* 	font-family:'Glyphicons Halflings'; */
+/* 	font-style:normal; */
+/* 	font-weight:400; */
+/* 	line-height:1.42857143; */
+/* 	-webkit-font-smoothing:antialiased; */
+/* 	-moz-osx-font-smoothing:grayscale */
+/* } */
+/* div.treeview li.toggletreeview::before { */
+/* 	content:"\002b"; */
+/* 	position:relative; */
+/* 	top:1px; */
+/* 	display:inline-block; */
+/* 	font-family:'Glyphicons Halflings'; */
+/* 	font-style:normal; */
+/* 	font-weight:400; */
+/* 	line-height:1.42857143; */
+/* 	-webkit-font-smoothing:antialiased; */
+/* 	-moz-osx-font-smoothing:grayscale */
+/* } */
+
+body{
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size:14px;
+	line-height:1.42857143;
+	color:#333;
+	background-color:#fff
+	}
+.custom-menu {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    overflow: hidden;
+    border: 1px solid #CCC;
+    white-space: nowrap;
+    font-family: sans-serif;
+    background: #FFF;
+    color: #333;
+    border-radius: 5px;
+    padding: 0;
+}
+
+/* Each of the items in the list */
+.custom-menu li {
+    padding: 8px 12px;
+    cursor: pointer;
+    list-style-type: none;
+}
+
+.custom-menu li:hover {
+    background-color: #DEF;
+}
+
+.header{
+    pointer-events:none;
+    opacity:0.8;
+    font-weight: bold;
+}
+.menu_item_disabled{
+    pointer-events:none;
+}

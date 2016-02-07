@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Anuj Gupta" />
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<title>Treeview -- Anuj Gupta</title>
+<link href="css/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<link href="css/custom/Hierarchy_Tree.css" rel="stylesheet"/>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/jquery-ui-1.11.4.js"></script>
+<script src="js/bootstrap.3.3.6.min.js"></script>
+<script src="js/Custom/HierarchySet.js"></script>
+<script src="js/Custom/Treeview.js"></script>
+</head>
+<body>
+<div class="container">
+<h2>Expand and Collapse with different icons</h2>
+<!-- <button type="button" class="btn btn-normal" data-toggle="collapse" data-target="#demo">
+      <span class="glyphicon glyphicon-plus"></span>
+    </button> -->
+ 
+  <div class="treeview">
+   
+   
+
+  <ul>
+  	<li>
+  		<a data-toggle="collapse" href="#-99999999999999999">Hierarchy_Tree</a>
+    
+	  <ul id="-99999999999999999" class="collapse">
+	    <li>
+	    <a data-toggle="collapse" href="#Parent1">Parent1</a>
+	    	<ul id="Parent1" class="collapse">
+		    	<li>
+		    		<a data-toggle="collapse" href="#Child1">Child1</a>
+		    	</li>
+		    	<li>
+		    		<a data-toggle="collapse" href="#Child2">Child2</a>
+		    	</li>
+	    	</ul>
+    	</li>
+	    <li>
+	    	<a data-toggle="collapse" href="#Parent2">Parent2</a>
+	    </li>
+	  </ul>
+	  </li>
+  </ul>
+ 
+ 
+ 
+  </div>
+
+ 
+
+
+<ul class="custom-menu">
+<li class="header">Move To</li>
+<li data-action="ADD_NEW">Add New</li>
+<li data-action="DELETE">Delete</li>
+<li data-action="Parent1">Parent1</li>
+<li data-action="Child1">Child1</li>
+<li data-action="Child2">Child2</li>
+<li data-action="Parent2">Parent2</li>
+</ul>
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-sm">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Enter New Node Name</h4>
+      </div>
+      <div class="modal-body">
+        <input type="text" id="NEW_NODE"/>
+      </div>
+      
+      <div class="modal-footer">
+      	<button type="button" class="btn btn-default" id="btnOK" data-dismiss="modal">Add</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+</div>
+</body>
+</html>
